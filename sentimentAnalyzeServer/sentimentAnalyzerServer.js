@@ -5,9 +5,7 @@ dotenv.config();
 function getNLUInstance(){
     let api_key=process.env.API_KEY;
     let api_url=process.env.API_URL;
-    /*let api_key="F25A4q6Ciya9Azh3G1mgUgut-hnxGyTJHXUIUWN07fT7";
-    let api_url="https://api.us-east.natural-language-understanding.watson.cloud.ibm.com/instances/0ef697cf-c52e-411f-a71d-9b53bf5168eb";*/
-
+    
     const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1');
     const {IamAuthenticator} = require('ibm-watson/auth');
 
